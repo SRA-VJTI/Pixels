@@ -1,7 +1,11 @@
-# RUNNING INSTRUCTION
+### Instructions for testing
 
 ```
-make SRC=src/main.cpp link="src/segmentation.cpp src/processing.cpp"
-
+make SRC=main.cpp link="src/segementation.cpp src/processing.cpp"\
+```
+then for running it 
 ```
 
+./image_segmentation
+
+```
