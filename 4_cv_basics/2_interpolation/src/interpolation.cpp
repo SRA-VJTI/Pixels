@@ -168,20 +168,3 @@ cv::Mat nearest_neighbour_interpolate(cv::Mat imageData, int width, int height, 
     return newImage; // return new Interpolated Image
 }
 
-void show(cv::Mat imageData, std::string windowName)
-{
-
-    /* Shows the desired image in a window with desired title
-
-       Returns void
-
-       Arguments :
-       cv :: Mat imageData : Matrix representing image to be shown
-       std :: string windowName : Title of the window
-
-*/
-    cv::namedWindow(windowName);       // create a window with windowName as name
-    cv::imshow(windowName, imageData); // show this image in that window
-    cv::waitKey(0);                    // wait till user exits
-    cv::destroyWindow(windowName);     // destroy window
-}
