@@ -34,9 +34,9 @@ int main(int argc, char **argv)
     cv::imwrite("./assets/pixeli3s.jpg", upscale_image);                    // Saving image
     cv::imwrite("./assets/pixeli3d.jpg", downscale_image);                    // Saving image
 
-    cv::imshow("Original Image", image);       // show image using show function defined in interpolation.cpp
-    cv::imshow("Interpolation UpScaling!", upscale_image);
-    cv::imshow("Interpolation DownScaling!", downscale_image);      
+    cv::imshow("Original Image", image);                     // Display original image 
+    cv::imshow("Interpolation UpScaling!", upscale_image);   // Display upscaled image
+    cv::imshow("Interpolation DownScaling!", downscale_image); // Display  downscaled image
     
     cv::waitKey(0); 
     cv::destroyAllWindows();
